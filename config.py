@@ -5,9 +5,9 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'ENTER_STORAGE_ACCOUNT_NAME'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'ENTER_BLOB_STORAGE_KEY'
-    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'ENTER_IMAGES_CONTAINER_NAME'
+    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'accountclouddemo'
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'zg1cQ4DHpnsHK1ENSovdLXhV2FIvPYSUUYaC7iy1vjtUTdTYKgdR0IArNbxRphHYOIf4Q6TA/gOqgHhWx2uT8Q=='
+    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'file'
 
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'hoangvd3-sqlserver.database.windows.net'
     SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'vm-cloud-demo'
