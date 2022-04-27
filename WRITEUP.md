@@ -3,31 +3,17 @@
 ### Analyze, choose, and justify the appropriate resource option for deploying the app.
 
 *For **both** a VM or App Service solution for the CMS app:*
-- scalability: Virtual machine scale sets - App Service Built-in service\
-- availability: SLA for Virtual Machines - SLA for App Service
-- costs: Windows, Linux - App Service pricing chipper
-- Choose App Service for deploying the app FlaskWebProject
-- VM benifit: 
-- Instant deployment.
-- Vertical scaling, without having to redeploy.
-- Support for multiple deployments (like staging and production).
-- Automatic OS upgrades for your infrastructure.
-- Integration capability with Git.Integration capability with MySQL.
-- Configuration of the application server/framework in the VM.
-- Integration with Azure services.OS patch management.
-- Design and configure the application and infrastructure to handle fluctuating traffic.Seamless platform switching (including the ability to - - move between 32 bit and 64 bit environments).
-- Security configuration.Identify and apply monitoring strategy for applications.
-- Access services like Service Bus, Storage, and SQL Database.
-- Host a web or web services tier of a multi-tier architecture.
-- Host a middle tier of a multi-tier architecture.Support for ASP.NET, classic ASP, Node.js, PHP, and Python.
-- Scale out to multiple instances without having to redeploy.Support for SSL.
-- Visual Studio integration.Remote Debugging.Network isolation with Azure Virtual Network.Integrated Endpoint monitoring.
+- Virtual Machines: Provision Windows and Linux virtual machines in seconds
+- App Service: Quickly create powerful cloud apps for web and mobile
+
+- APP SERVICE: The costs, scalability, and availability for a CMS app deployed through an App Service are reasonable. This is a fairly lightweight app, so it does not need a significant compute capability. So even though the service plans are constant and the user is paying even when no one is accessing the service, the reduced compute requirements of a CMS app are not expensive. Continous deployment through GitHub workflows on the Azure portal makes updating the CMS app a snap.
+
+- VM: The costs, scalability, and availability for a CMS app deployed through a VM are also reasonable. The VM allows for more customization of the app's capability. It also would really benefit developers who have already built a CMS app but it might not be supported through App Service but could work through the VM workflow. It also allows for more fine-tuning, so the developer can customize the VM to optimize their CMS app.
+
+- My Choice: I chose App Service because the CMS app is lightweight, does not require robust compute power, and is easy to deploy through Azure. The CMS App is straightforward and runs on a Python codebase, which is supported by App Service. Overall, a simple choice.
+
 ### Assess app changes that would change your decision.
 
-- price
-- scale db, storage
-- thirt party (notify, dependency)
-- security
-- microservices
-- CICD
-- database
+- APP Service: If the CMS app needed to be updated to allow for more compute capability, maybe playing movies or editing images or integrating jupyter notebooks or something that would require more hardware, the costs could rise quickly. Also if there was functionality desired that is not supported by Azure, that would be a roadblock for sure. Being unable to control the underlying software on the server could also cause significant issues that could break your app.
+
+- VM: If this CMS became more popular, it could become more expensive due to requiring more hardware/compute power. A new developer coming onboard needs to know how the VM has been customized, so the on-boarding for new devs would take a bit longer. Also, if the CMS needed more compute capability, it could also become significantly more expensive.
