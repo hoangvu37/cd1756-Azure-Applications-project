@@ -7,7 +7,7 @@
 - availability: SLA for Virtual Machines - SLA for App Service
 - costs: Windows, Linux - App Service pricing chipper
 - Choose App Service for deploying the app FlaskWebProject
-VM benifit: 
+- VM benifit: 
 - Instant deployment.
 - Vertical scaling, without having to redeploy.
 - Support for multiple deployments (like staging and production).
