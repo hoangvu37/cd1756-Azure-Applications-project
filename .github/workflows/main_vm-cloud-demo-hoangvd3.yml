@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'vm-cloud-demo-hoangvd3'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7500DA96C68D46828F3924DFBEAA14E9 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_794F2D4F17D347329D8A9980858F274B }}
